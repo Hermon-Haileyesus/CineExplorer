@@ -2,10 +2,10 @@ import './App.css'
 import MovieCard from './components/MovieCard'
 
 function App() {
-  const movieNumber= 2;
+  const movieNumber= 1;
   return (
     <>
-    {movieNumber===1 ?(<MovieCard movie={{title: "Hermon", release_date: "2024"}}/>):(<MovieCard movie={{title: "Times", release_date: "2024"}}/>)}
+    {movieNumber===1 && <MovieCard movie={{title: "Hermon", release_date: "2024"}}/>}
     </>
     
   )
