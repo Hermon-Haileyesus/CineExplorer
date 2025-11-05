@@ -22,8 +22,7 @@ const handleSearch = (e) =>{
             <button type="submit" className="search-button">Search</button>
         </form>
         <div className="movies-grid">
-            {movies.map((movie) => movie.title.toLowerCase().startsWith(searchQuery)&&
-            (<MovieCard movie={movie} key={movie.id}/>))}
+            {movies.map((movie) =>(<MovieCard movie={movie} key={movie.id}/>))}
         </div>
     </div>
 }
